@@ -1,2 +1,0 @@
-# TaskTracker
-Тестовая программа TaskTracker.
