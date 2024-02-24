@@ -1,0 +1,28 @@
+classDiagram
+    Task --> Epic
+    Epic --> Subtask
+    Task .. enumStatus
+    Task : String name
+    Task : String discription
+    Task : int id
+    Task : enumStatus status
+    Task : set(type value)
+    Task : get()
+    enumStatus : NEW
+    enumStatus : IN_PROGRESS
+    enumStatus : DONE
+    Epic : List subtask
+    Subtask : int epicId
+    Subtask : get()
+    Task <|-- Manager : Interaction with all task types
+    Manager : Map storage
+    Manager : getAllTask(Map storage)
+    Manager : deleteAllTask(Map storage)
+    Manager : deleteAllTask(Map storage)
+    Manager : getTaskById(Map storage)
+    Manager : deleteTaskById(Map storage)
+    Manager : createTask(Task task)
+    Manager : updateTask(Task task)
+    Manager : getEpicSubtask(Epic epic)
+
+

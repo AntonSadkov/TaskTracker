@@ -15,7 +15,7 @@ public interface Manager {
 
     void deleteAllTask(List<Task> allTask);
 
-    void deleteTaskBiId(List<Task> allTask);
+    void deleteTaskById(List<Task> allTask);
 
     List<Task> getEpicSubtask(Epic epic);
 }

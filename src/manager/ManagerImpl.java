@@ -32,7 +32,7 @@ public class ManagerImpl implements Manager{
     }
 
     @Override
-    public void deleteTaskBiId(List<Task> allTask) {
+    public void deleteTaskById(List<Task> allTask) {
 
     }
 
